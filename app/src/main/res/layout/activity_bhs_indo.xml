@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:alwaysDrawnWithCache="false"
+    tools:context="com.example.adisuarpala.balifoodiy.BhsIndoActivity"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/sateln"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:text="BALI FOODIY"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="22pt"
+            android:textStyle="bold"
+            />
+
+        <me.anshulagarwal.expandablemenuoption.ExpandableMenuView
+            android:id="@+id/expandable_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            app:bottom_drawable="@drawable/ic_null"
+            app:top_drawable="@drawable/ic_null"
+            app:left_drawable="@drawable/ic_book_id"
+            app:right_drawable="@drawable/ic_location_id"
+
+            app:menu_color="@color/menu_color"
+            app:menu_drawable="@drawable/ic_add"
+            app:menu_expanded_radius="@dimen/big_radius"
+            app:menu_radius="@dimen/small_radius"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

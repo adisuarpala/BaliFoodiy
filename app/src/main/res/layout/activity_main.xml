@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:alwaysDrawnWithCache="false"
+    tools:context="com.example.adisuarpala.balifoodiy.MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/tipatax"
+        android:scaleType="centerCrop"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:id="@+id/viewFlipper1"
+        android:gravity="center"
+        android:autoStart="true"
+        android:flipInterval="6000"
+        android:inAnimation="@android:anim/fade_in"
+        android:outAnimation="@android:anim/fade_out">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/on_textview"
+            android:textSize="20pt"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:text="Pilih Bahasa" />
+
+        <TextView
+            android:id="@+id/off_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Select Language"
+            android:textColor="@color/white"
+            android:textSize="20pt" />
+    </ViewFlipper>
+
+    <me.anshulagarwal.expandablemenuoption.ExpandableMenuView
+        android:id="@+id/expandable_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:bottom_drawable="@drawable/ic_en"
+        app:top_drawable="@drawable/ic_id"
+        app:left_drawable="@drawable/ic_null"
+        app:right_drawable="@drawable/ic_null"
+
+        app:menu_color="@color/menu_color"
+        app:menu_drawable="@drawable/ic_add"
+        app:menu_expanded_radius="@dimen/big_radius"
+        app:menu_radius="@dimen/small_radius"
+        />
+
+</LinearLayout>
+
+</RelativeLayout>
+
+
+
+
+
